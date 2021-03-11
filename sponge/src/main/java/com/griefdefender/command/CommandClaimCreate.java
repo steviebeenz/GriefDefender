@@ -71,7 +71,7 @@ public class CommandClaimCreate extends BaseCommand {
 
     @CommandCompletion("@gddummy @gdclaimtypes @gddummy")
     @CommandAlias("claimcreate")
-    @Description("Creates a claim around the player.")
+    @Description("%claim-create")
     @Syntax("<radius> [type]")
     @Subcommand("claim create")
     public void execute(Player player, int radius, @Optional String type) {
@@ -85,6 +85,13 @@ public class CommandClaimCreate extends BaseCommand {
                     "min-level", minClaimLevel,
                     "max-level", maxClaimLevel));
             GriefDefenderPlugin.sendMessage(player, message);
+            return;
+        }
+
+        final int radiusLimit = GriefDefenderPlugin.getGlobalConfig().getConfig().claim.claimCreateRadiusLimit;
+        if (radius > radiusLimit) {
+            GriefDefenderPlugin.sendMessage(player, GriefDefenderPlugin.getInstance().messageData.getMessage(MessageStorage.CREATE_FAILED_RESULT,
+                    ImmutableMap.of("reason", "Radius exceeds limit of " + radiusLimit + ".")));
             return;
         }
 

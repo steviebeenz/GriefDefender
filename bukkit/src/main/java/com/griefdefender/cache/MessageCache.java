@@ -184,6 +184,7 @@ public class MessageCache {
     public Component ECONOMY_SIGN_SOLD_LINE4;
     public Component ECONOMY_VIRTUAL_NOT_SUPPORTED;
     public Component FEATURE_NOT_AVAILABLE;
+    public Component FLAG_DESCRIPTION_CUSTOM_ANIMAL_BLOCK_MODIFY;
     public Component FLAG_DESCRIPTION_CUSTOM_ARMOR_STAND_USE;
     public Component FLAG_DESCRIPTION_CUSTOM_BLOCK_TRAMPLING;
     public Component FLAG_DESCRIPTION_CUSTOM_CHEST_ACCESS;
@@ -236,8 +237,10 @@ public class MessageCache {
     public Component FLAG_DESCRIPTION_CUSTOM_PISTON_ITEM_SPAWN;
     public Component FLAG_DESCRIPTION_CUSTOM_PISTON_USE;
     public Component FLAG_DESCRIPTION_CUSTOM_PVP;
+    public Component FLAG_DESCRIPTION_CUSTOM_RAVAGER_BLOCK_BREAK;
     public Component FLAG_DESCRIPTION_CUSTOM_RIDE;
     public Component FLAG_DESCRIPTION_CUSTOM_SLEEP;
+    public Component FLAG_DESCRIPTION_CUSTOM_SILVERFISH_BLOCK_INFEST;
     public Component FLAG_DESCRIPTION_CUSTOM_SNOW_FALL;
     public Component FLAG_DESCRIPTION_CUSTOM_SNOW_MELT;
     public Component FLAG_DESCRIPTION_CUSTOM_SNOWMAN_TRAIL;
@@ -298,6 +301,11 @@ public class MessageCache {
     public Component FLAG_UI_CLICK_ALLOW;
     public Component FLAG_UI_CLICK_DENY;
     public Component FLAG_UI_CLICK_REMOVE;
+    public Component FLAG_UI_EVENT_CANCEL;
+    public Component FLAG_UI_HOVER_ACTIVE_RESULT;
+    public Component FLAG_UI_HOVER_DEFAULT_VALUE;
+    public Component FLAG_UI_HOVER_DEFINITION_CONTEXTS;
+    public Component FLAG_UI_HOVER_PARTIAL;
     public Component FLAG_UI_INFO_CLAIM;
     public Component FLAG_UI_INFO_DEFAULT;
     public Component FLAG_UI_INFO_INHERIT;
@@ -324,7 +332,6 @@ public class MessageCache {
     public Component LABEL_DEFAULT;
     public Component LABEL_DISPLAYING;
     public Component LABEL_EXPIRED;
-    public Component LABEL_FALSE;
     public Component LABEL_FAREWELL;
     public Component LABEL_FILTER;
     public Component LABEL_FLAG;
@@ -360,7 +367,6 @@ public class MessageCache {
     public Component LABEL_SPAWN;
     public Component LABEL_STATUS;
     public Component LABEL_TARGET;
-    public Component LABEL_TRUE;
     public Component LABEL_TRUST;
     public Component LABEL_TYPE;
     public Component LABEL_UNKNOWN;
@@ -409,6 +415,7 @@ public class MessageCache {
     public Component OPTION_DESCRIPTION_TAX_EXPIRATION_DAYS_KEEP;
     public Component OPTION_DESCRIPTION_TAX_RATE;
     public Component OPTION_UI_CLICK_REMOVE;
+    public Component OPTION_UI_NOT_DEFINED;
     public Component OWNER_ADMIN;
     public Component PERMISSION_ASSIGN_WITHOUT_HAVING;
     public Component PERMISSION_CLAIM_CREATE;
@@ -424,6 +431,7 @@ public class MessageCache {
     public Component PERMISSION_COMMAND_TRUST;
     public Component PERMISSION_CUBOID;
     public Component PERMISSION_EDIT_CLAIM;
+    public Component PERMISSION_FALSE;
     public Component PERMISSION_FIRE_SPREAD;
     public Component PERMISSION_FLAG_DEFAULTS;
     public Component PERMISSION_FLAG_OVERRIDES;
@@ -442,6 +450,8 @@ public class MessageCache {
     public Component PERMISSION_PLAYER_OPTION;
     public Component PERMISSION_PLAYER_VIEW_OTHERS;
     public Component PERMISSION_TAX;
+    public Component PERMISSION_TRUE;
+    public Component PERMISSION_UNDEFINED;
     public Component PERMISSION_VISUAL_CLAIMS_NEARBY;
     public Component PLAYER_ITEM_DROPS_LOCK;
     public Component PLUGIN_EVENT_CANCEL;
@@ -513,9 +523,12 @@ public class MessageCache {
     public Component UI_CLICK_ADD_GROUP;
     public Component UI_CLICK_ADD_PLAYER;
     public Component UI_CLICK_CONFIRM;
+    public Component UI_CLICK_RECORD_CHAT;
     public Component UI_CLICK_REMOVE;
     public Component UI_CLICK_VIEW_TRANSACTIONS;
+    public Component UI_CONFLICT_DATA;
     public Component UI_PAY_NEXT_DUE_DATE;
+    public Component UI_RECORD_CHAT;
     public Component UNTRUST_NO_CLAIMS;
     public Component UNTRUST_SELF;
 
@@ -657,6 +670,7 @@ public class MessageCache {
         ECONOMY_SIGN_SOLD_LINE4 = MessageStorage.MESSAGE_DATA.getMessage("economy-sign-sold-line4");
         ECONOMY_VIRTUAL_NOT_SUPPORTED = MessageStorage.MESSAGE_DATA.getMessage("economy-virtual-not-supported");
         FEATURE_NOT_AVAILABLE = MessageStorage.MESSAGE_DATA.getMessage("feature-not-available");
+        FLAG_DESCRIPTION_CUSTOM_ANIMAL_BLOCK_MODIFY = MessageStorage.MESSAGE_DATA.getMessage("flag-description-custom-animal-block-modify");
         FLAG_DESCRIPTION_CUSTOM_ARMOR_STAND_USE = MessageStorage.MESSAGE_DATA.getMessage("flag-description-custom-armorstand-use");
         FLAG_DESCRIPTION_CUSTOM_BLOCK_TRAMPLING = MessageStorage.MESSAGE_DATA.getMessage("flag-description-custom-block-trampling");
         FLAG_DESCRIPTION_CUSTOM_CHEST_ACCESS = MessageStorage.MESSAGE_DATA.getMessage("flag-description-custom-chest-access");
@@ -709,7 +723,9 @@ public class MessageCache {
         FLAG_DESCRIPTION_CUSTOM_PLAYER_TELEPORT_TO = MessageStorage.MESSAGE_DATA.getMessage("flag-description-custom-player-teleport-to");
         FLAG_DESCRIPTION_CUSTOM_PLAYER_VILLAGER_DAMAGE = MessageStorage.MESSAGE_DATA.getMessage("flag-description-custom-player-villager-damage");
         FLAG_DESCRIPTION_CUSTOM_PVP = MessageStorage.MESSAGE_DATA.getMessage("flag-description-custom-pvp");
+        FLAG_DESCRIPTION_CUSTOM_RAVAGER_BLOCK_BREAK = MessageStorage.MESSAGE_DATA.getMessage("flag-description-custom-ravager-block-break");
         FLAG_DESCRIPTION_CUSTOM_RIDE = MessageStorage.MESSAGE_DATA.getMessage("flag-description-custom-ride");
+        FLAG_DESCRIPTION_CUSTOM_SILVERFISH_BLOCK_INFEST = MessageStorage.MESSAGE_DATA.getMessage("flag-description-custom-silverfish-block-infest");
         FLAG_DESCRIPTION_CUSTOM_SLEEP = MessageStorage.MESSAGE_DATA.getMessage("flag-description-custom-sleep");
         FLAG_DESCRIPTION_CUSTOM_SNOW_FALL = MessageStorage.MESSAGE_DATA.getMessage("flag-description-custom-snow-fall");
         FLAG_DESCRIPTION_CUSTOM_SNOW_MELT = MessageStorage.MESSAGE_DATA.getMessage("flag-description-custom-snow-melt");
@@ -770,6 +786,11 @@ public class MessageCache {
         FLAG_UI_CLICK_ALLOW = MessageStorage.MESSAGE_DATA.getMessage("flag-ui-click-allow");
         FLAG_UI_CLICK_DENY = MessageStorage.MESSAGE_DATA.getMessage("flag-ui-click-deny");
         FLAG_UI_CLICK_REMOVE = MessageStorage.MESSAGE_DATA.getMessage("flag-ui-click-remove");
+        FLAG_UI_EVENT_CANCEL = MessageStorage.MESSAGE_DATA.getMessage("flag-ui-event-cancel");
+        FLAG_UI_HOVER_ACTIVE_RESULT = MessageStorage.MESSAGE_DATA.getMessage("flag-ui-hover-active-result");
+        FLAG_UI_HOVER_DEFAULT_VALUE = MessageStorage.MESSAGE_DATA.getMessage("flag-ui-hover-default-value");
+        FLAG_UI_HOVER_DEFINITION_CONTEXTS = MessageStorage.MESSAGE_DATA.getMessage("flag-ui-hover-definition-contexts");
+        FLAG_UI_HOVER_PARTIAL = MessageStorage.MESSAGE_DATA.getMessage("flag-ui-hover-partial");
         FLAG_UI_INFO_CLAIM = MessageStorage.MESSAGE_DATA.getMessage("flag-ui-info-claim");
         FLAG_UI_INFO_DEFAULT = MessageStorage.MESSAGE_DATA.getMessage("flag-ui-info-default");
         FLAG_UI_INFO_INHERIT = MessageStorage.MESSAGE_DATA.getMessage("flag-ui-info-inherit");
@@ -796,7 +817,6 @@ public class MessageCache {
         LABEL_DEFAULT = MessageStorage.MESSAGE_DATA.getMessage("label-default");
         LABEL_DISPLAYING = MessageStorage.MESSAGE_DATA.getMessage("label-displaying");
         LABEL_EXPIRED = MessageStorage.MESSAGE_DATA.getMessage("label-expired");
-        LABEL_FALSE = MessageStorage.MESSAGE_DATA.getMessage("label-false");
         LABEL_FAREWELL = MessageStorage.MESSAGE_DATA.getMessage("label-farewell");
         LABEL_FILTER = MessageStorage.MESSAGE_DATA.getMessage("label-filter");
         LABEL_FLAG = MessageStorage.MESSAGE_DATA.getMessage("label-flag");
@@ -832,7 +852,6 @@ public class MessageCache {
         LABEL_SPAWN = MessageStorage.MESSAGE_DATA.getMessage("label-spawn");
         LABEL_STATUS = MessageStorage.MESSAGE_DATA.getMessage("label-status");
         LABEL_TARGET = MessageStorage.MESSAGE_DATA.getMessage("label-target");
-        LABEL_TRUE = MessageStorage.MESSAGE_DATA.getMessage("label-true");
         LABEL_TRUST = MessageStorage.MESSAGE_DATA.getMessage("label-trust");
         LABEL_TYPE = MessageStorage.MESSAGE_DATA.getMessage("label-type");
         LABEL_UNKNOWN = MessageStorage.MESSAGE_DATA.getMessage("label-unknown");
@@ -881,6 +900,7 @@ public class MessageCache {
         OPTION_DESCRIPTION_TAX_EXPIRATION_DAYS_KEEP = MessageStorage.MESSAGE_DATA.getMessage("option-description-tax-expiration-days-keep");
         OPTION_DESCRIPTION_TAX_RATE = MessageStorage.MESSAGE_DATA.getMessage("option-description-tax-rate");
         OPTION_UI_CLICK_REMOVE = MessageStorage.MESSAGE_DATA.getMessage("option-ui-click-remove");
+        OPTION_UI_NOT_DEFINED = MessageStorage.MESSAGE_DATA.getMessage("option-ui-not-defined");
         OWNER_ADMIN = MessageStorage.MESSAGE_DATA.getMessage("owner-admin");
         PERMISSION_ASSIGN_WITHOUT_HAVING = MessageStorage.MESSAGE_DATA.getMessage("permission-assign-without-having");
         PERMISSION_CLAIM_CREATE = MessageStorage.MESSAGE_DATA.getMessage("permission-claim-create");
@@ -896,6 +916,7 @@ public class MessageCache {
         PERMISSION_COMMAND_TRUST = MessageStorage.MESSAGE_DATA.getMessage("permission-command-trust");
         PERMISSION_CUBOID = MessageStorage.MESSAGE_DATA.getMessage("permission-cuboid");
         PERMISSION_EDIT_CLAIM = MessageStorage.MESSAGE_DATA.getMessage("permission-edit-claim");
+        PERMISSION_FALSE = MessageStorage.MESSAGE_DATA.getMessage("permission-false");
         PERMISSION_FIRE_SPREAD = MessageStorage.MESSAGE_DATA.getMessage("permission-fire-spread");
         PERMISSION_FLAG_DEFAULTS = MessageStorage.MESSAGE_DATA.getMessage("permission-flag-defaults");
         PERMISSION_FLAG_OVERRIDES = MessageStorage.MESSAGE_DATA.getMessage("permission-flag-overrides");
@@ -914,6 +935,8 @@ public class MessageCache {
         PERMISSION_PLAYER_OPTION = MessageStorage.MESSAGE_DATA.getMessage("permission-player-option");
         PERMISSION_PLAYER_VIEW_OTHERS = MessageStorage.MESSAGE_DATA.getMessage("permission-player-view-others");
         PERMISSION_TAX = MessageStorage.MESSAGE_DATA.getMessage("permission-tax");
+        PERMISSION_TRUE = MessageStorage.MESSAGE_DATA.getMessage("permission-true");
+        PERMISSION_UNDEFINED = MessageStorage.MESSAGE_DATA.getMessage("permission-undefined");
         PERMISSION_VISUAL_CLAIMS_NEARBY = MessageStorage.MESSAGE_DATA.getMessage("permission-visual-claims-nearby");
         PLAYER_ITEM_DROPS_LOCK = MessageStorage.MESSAGE_DATA.getMessage("player-item-drops-lock");
         PLUGIN_EVENT_CANCEL = MessageStorage.MESSAGE_DATA.getMessage("plugin-event-cancel");
@@ -985,9 +1008,12 @@ public class MessageCache {
         UI_CLICK_ADD_GROUP = MessageStorage.MESSAGE_DATA.getMessage("ui-click-add-group");
         UI_CLICK_ADD_PLAYER = MessageStorage.MESSAGE_DATA.getMessage("ui-click-add-player");
         UI_CLICK_CONFIRM = MessageStorage.MESSAGE_DATA.getMessage("ui-click-confirm");
+        UI_CLICK_RECORD_CHAT = MessageStorage.MESSAGE_DATA.getMessage("ui-click-record-chat");
         UI_CLICK_REMOVE = MessageStorage.MESSAGE_DATA.getMessage("ui-click-remove");
         UI_CLICK_VIEW_TRANSACTIONS = MessageStorage.MESSAGE_DATA.getMessage("ui-click-view-transactions");
+        UI_CONFLICT_DATA = MessageStorage.MESSAGE_DATA.getMessage("ui-conflict-data");
         UI_PAY_NEXT_DUE_DATE = MessageStorage.MESSAGE_DATA.getMessage("ui-pay-next-due-date");
+        UI_RECORD_CHAT = MessageStorage.MESSAGE_DATA.getMessage("ui-record-chat");
         UNTRUST_NO_CLAIMS = MessageStorage.MESSAGE_DATA.getMessage("untrust-no-claims");
         UNTRUST_SELF = MessageStorage.MESSAGE_DATA.getMessage("untrust-self");
 
